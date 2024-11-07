@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Color Brightness</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="main.js"></script>
+    <script defer src="script.js"></script> <!-- Link to the new script.js -->
+  </head>
+
+  <body>
+    <h1>Color Brightness Calculator</h1>
+
+    <p>
+      <img src="img/luminance-formula.png" alt="Luminance Formula" />
+    </p>
+
+    <p>
+      The perceived <strong>brightness</strong> or <strong>luminance</strong> of
+      a color may be calculated using the
+      <a href="https://www.w3schools.com/colors/colors_rgb.asp" target="_blank"
+        >RGB values</a
+      >
+      of the color.
+    </p>
+
+    <p class="inputs">
+      R: <input type="number" id="inputR" class="some-class" value="0" /> G:
+      <input type="number" id="inputG" value="0" /> B:
+      <input type="number" id="inputB" value="0" />
+      <button id="calculateButton">Calculate Luminance</button> <!-- Added ID -->
+    </p>
+
+    <hr />
+
+    <p class="output">Luminance = <span id="luminanceOutput">0</span></p> <!-- Added ID -->
+  </body>
+</html>
